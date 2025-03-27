@@ -70,13 +70,28 @@ header p {
     align-items: center;
     color: var(--fg);
     font-size: large;
-    padding: 2.5rem;
-    margin: auto;
-    /* color: var(--fg);
     padding: 3rem;
-    text-align: center-left;
-    margin: 10px;
-    font-size: large; */
+    margin: auto;
+}
+
+.skills {
+    width: 70%;
+    color: var(--fg);
+    font-size: large;
+    margin: auto;
+    padding: 0 3rem 3rem 3rem;
+    ul {
+        list-style-type: none;
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+
 }
 
 .socials {
