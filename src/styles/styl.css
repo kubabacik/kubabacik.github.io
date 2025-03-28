@@ -94,11 +94,43 @@ header p {
 
 }
 
+.contact {
+    width: 70%;
+    color: var(--fg);
+    font-size: large;
+    margin: auto;
+    padding: 0 3rem 0 3rem;
+
+}
+
+.contact li {
+    list-style-type: none;
+}
+.contact a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.stats {
+    width: 70%;
+    color: var(--fg);
+    font-size: large;
+    margin: auto;
+    padding: 0 3rem 3rem 3rem;
+}
+.stats li {
+    list-style-type: none;
+}
+.stats a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
 .socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -113,8 +145,6 @@ header p {
 footer {
     color: var(--fg);
     text-align: center;
-    padding: 1px;
-    position: fixed;
     width: 100%;
     font-size: small;
 
