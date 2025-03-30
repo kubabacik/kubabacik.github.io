@@ -1,13 +1,10 @@
-*{
+* {
     --fg: #bac2de;
     --fg-lighter: #9399b2;
-  
     --bg: #181825;
     --bg-lighter: #1e1e2e;
-  
     --card: #313244;
     --special: var(--purple);
-  
     --blue: #89b4fa;
     --green: #a6e3a1;
     --yellow: #f9e2af;
@@ -21,10 +18,9 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Fira Code', monospace; 
-    background-color: var(--bg-lighter); 
+    background-color: var(--bg); 
     color: var(--fg);
     line-height: 1.6;
 }
@@ -32,15 +28,14 @@ body {
 header {
     background-color: var(--bg); 
     color: var(--fg);
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
-
     
 header p {
     font-size: 1.2rem;
@@ -50,18 +45,43 @@ header p {
 .btn {
     display: inline-block;
     background-color: transparent; 
-    border: var(--fg) 2px dashed;
+    border: 2px dashed var(--purple); 
     color: var(--purple);
-    transition: 0.5s;
-    padding: 0.5rem;
+    transition: all 0.4s ease;
+    padding: 0.6rem 1.2rem;
     text-decoration: none;
-    margin: 0.25rem;
-    font-size: 1.2rem;;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
 }
 
 .btn:hover {
-    background-color: var(--bg-lighter); 
+    background-color: rgba(203, 166, 247, 0.1); 
+    border-style: solid; 
+    transform: translateY(-2px);
 }
+
+/* .about, .skills, .stats, .contact {
+    position: relative;
+    padding-left: 1.5rem; 
+}
+
+.about::before, .skills::before, 
+.stats::before, .contact::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        var(--purple),
+        transparent
+    );
+    box-shadow: 0 0 8px var(--purple);
+} */
 
 .about {
     width: 70%;
@@ -80,18 +100,20 @@ header p {
     font-size: large;
     margin: auto;
     padding: 0 3rem 3rem 3rem;
-    ul {
-        list-style-type: none;
-        li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            img {
-                margin-right: 1rem;
-            }
-        }
-    }
+}
 
+.skills ul {
+    list-style-type: none;
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skills img {
+    margin-right: 1rem;
 }
 
 .contact {
@@ -100,12 +122,12 @@ header p {
     font-size: large;
     margin: auto;
     padding: 0 3rem 0 3rem;
-
 }
 
 .contact li {
     list-style-type: none;
 }
+
 .contact a {
     text-decoration: none;
     color: var(--purple);
@@ -118,9 +140,11 @@ header p {
     margin: auto;
     padding: 0 3rem 3rem 3rem;
 }
+
 .stats li {
     list-style-type: none;
 }
+
 .stats a {
     text-decoration: none;
     color: var(--purple);
@@ -133,7 +157,6 @@ header p {
     margin-top: 1.5rem;
 }
 
-
 .socials a {
     margin: 0 5px;
     display: flex;
@@ -141,18 +164,17 @@ header p {
     align-items: center;
 }
 
-
 footer {
     color: var(--fg);
     text-align: center;
     width: 100%;
     font-size: small;
+}
 
-    a {
-        color: var(--purple);
+footer a {
+    color: var(--purple);
+}
 
-        &:hover {
-            color: var(--purple);
-        }
-    }
+footer a:hover {
+    color: var(--purple);
 }
