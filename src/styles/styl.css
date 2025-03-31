@@ -25,11 +25,11 @@ body {
     line-height: 1.6;
 }
 
-header {
+/* header {
     background-color: var(--bg); 
     color: var(--fg);
     padding: 1rem;
-    text-align: center;
+    text-align: ;
 }
 
 header h1 {
@@ -40,9 +40,9 @@ header h1 {
 header p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
-}
+} */
 
-.btn {
+/* .btn {
     display: inline-block;
     background-color: transparent; 
     border: 2px dashed var(--purple); 
@@ -59,7 +59,7 @@ header p {
     background-color: rgba(203, 166, 247, 0.1); 
     border-style: solid; 
     transform: translateY(-2px);
-}
+} */
 
 /* .about, .skills, .stats, .contact {
     position: relative;
@@ -87,11 +87,21 @@ header p {
     width: 70%;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: var(--fg);
     font-size: large;
     padding: 3rem;
     margin: auto;
+    text-align: left;
+    flex-direction: column;
+}
+
+.about h1 {
+    font-size: 3rem;
+}
+
+
+.about .color {
+    color: var(--purple);
 }
 
 .skills {
