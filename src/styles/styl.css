@@ -1,176 +1,149 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Fira Code', monospace; 
-    background-color: var(--bg); 
-    color: var(--fg);
-    line-height: 1.6;
+  font-family: "Fira Code", monospace;
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
 }
 
 .theme-div {
-    margin: 0;
-    position: relative;
-    top: 5rem;
-    left: 100rem;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 0rem 0rem;
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+  }
 }
 
 .theme-switcher {
-    border: var(--border, var(--border-default));
-    width: 10%;
-    padding: .5rem;
-    #theme-select {
-      border: none;
-      color: var(--fg);
-      background: var(--bg);
-      width: 100%;
-      height: 100%;
-      font-size: 1rem;
-    };
+  border: var(--border, var(--border-default));
+  width: 12rem;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
-
-
-/* header {
-    background-color: var(--bg); 
+  padding: 0.5rem;
+  #theme-select {
+    border: none;
     color: var(--fg);
-    padding: 3rem 0rem 0rem 0rem;
-    width: 80%;
-    margin: auto;
-} */
-
-/* header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-} */
-    
-header p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    background: var(--bg);
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+  }
 }
-
-/* .btn {
-    display: inline-block;
-    background-color: transparent; 
-    border: 2px dashed var(--purple); 
-    color: var(--purple);
-    transition: all 0.4s ease;
-    padding: 0.6rem 1.2rem;
-    text-decoration: none;
-    margin: 0.5rem;
-    font-size: 1.1rem;
-}
-
-.btn:hover {
-    background-color: rgba(203, 166, 247, 0.1); 
-    border-style: solid; 
-    transform: translateY(-2px);
-} */
 
 .about {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    color: var(--fg);
-    font-size: large;
-    padding: 3rem;
-    margin: auto;
-    text-align: left;
-    flex-direction: column;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  color: var(--fg);
+  font-size: large;
+  /* padding: 3rem; */
+  margin: auto;
+  text-align: left;
+  flex-direction: column;
+  /* @media only screen and (max-width: 768px) {
+        width: 100%
+    } */
 }
 
 .about h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-
 .about .color {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .skills {
-    width: 70%;
-    color: var(--fg);
-    font-size: large;
-    margin: auto;
-    padding: 0 3rem 3rem 3rem;
+  width: 70%;
+  color: var(--fg);
+  font-size: large;
+  margin: auto;
+  padding: 3rem 3rem 3rem 0;
 }
 
 .skills ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .skills li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .skills img {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .contact {
-    width: 70%;
-    color: var(--fg);
-    font-size: large;
-    margin: auto;
-    padding: 0 3rem 0 3rem;
+  width: 70%;
+  color: var(--fg);
+  font-size: large;
+  margin: auto;
+  padding: 0 3rem 0 0;
 }
 
 .contact li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .contact a {
-    text-decoration: none;
-    color: var(--purple);
+  text-decoration: none;
+  color: var(--purple);
 }
 
 .stats {
-    width: 70%;
-    color: var(--fg);
-    font-size: large;
-    margin: auto;
-    padding: 0 3rem 3rem 3rem;
+  width: 70%;
+  color: var(--fg);
+  font-size: large;
+  margin: auto;
+  padding: 0 3rem 3rem 0;
 }
 
 .stats li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .stats a {
-    text-decoration: none;
-    color: var(--purple);
+  text-decoration: none;
+  color: var(--purple);
 }
 
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .socials a {
-    margin: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-    color: var(--fg);
-    text-align: center;
-    width: 100%;
-    font-size: small;
+  color: var(--fg);
+  text-align: center;
+  width: 100%;
+  font-size: small;
 }
 
 footer a {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 footer a:hover {
-    color: var(--purple);
+  color: var(--purple);
 }

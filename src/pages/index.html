@@ -1,32 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script>
-      fetch('https://wakatime.com/share/@kubabacik/5e57fc36-1bbd-427f-a30e-c5081572cd29.json').then(async res => {
+      fetch(
+        "https://wakatime.com/share/@kubabacik/5e57fc36-1bbd-427f-a30e-c5081572cd29.json",
+      ).then(async (res) => {
         if (res.ok) {
-            const json = await res.json();
-            document.getElementById('wt-time').innerHTML = json.data.grand_total.human_readable_total;
+          const json = await res.json();
+          document.getElementById("wt-time").innerHTML =
+            json.data.grand_total.human_readable_total;
         }
-      })
-      fetch('https://api.github.com/users/kubabacik').then(async res => {
+      });
+      fetch("https://api.github.com/users/kubabacik").then(async (res) => {
         if (res.ok) {
-            const json = await res.json();
-            document.getElementById('gh-followers').innerText = json.followers;
-            document.getElementById('gh-repos').innerText = json.public_repos;
+          const json = await res.json();
+          document.getElementById("gh-followers").innerText = json.followers;
+          document.getElementById("gh-repos").innerText = json.public_repos;
         }
-      })
-      
+      });
     </script>
     <title>kubabacik</title>
-    <link rel="stylesheet" href="../styles/styl.css">
-    <link rel="stylesheet" href="../styles/themes.css">
+    <link rel="stylesheet" href="../styles/styl.css" />
+    <link rel="stylesheet" href="../styles/themes.css" />
     <script src="../js/index.js"></script>
-</head>
-<body>
-    <div class="theme-div">
-        <form name="themes" id="form-themes" class="theme-switcher">
+  </head>
+  <body>
+    <div class="sections-container">
+      <div class="about">
+        <div class="theme-div">
+          <form name="themes" id="form-themes" class="theme-switcher">
             <select name="themes" id="theme-select">
               <option value="cat-mocha">Catppuccin Mocha</option>
               <option value="cat-macch">Catppuccin Macchiato</option>
@@ -35,47 +39,132 @@
               <option value="biscuit">Biscuit</option>
             </select>
           </form>
-    </div>
-    <div class="sections-container">
-    <div class="about">
-            <h1>Hello, I'm <span class="color">Kuba</span></h1>
-            I am currently learning programming and developing my skills. This website is my first project, created to collect and showcase my future work.<br>
-            Beyond coding, I enjoy cycling, gaming, and music. I'm always looking for new things to learn and ways to improve my skills.<br>
-            The journey has just begun – more to come!
-    </div>
-    <div class="skills">
+        </div>
+        <h1>Hello, I'm <span class="color">Kuba</span></h1>
+        I am currently learning programming and developing my skills. This
+        website is my first project, created to collect and showcase my future
+        work.<br />
+        Beyond coding, I enjoy cycling, gaming, and music. I'm always looking
+        for new things to learn and ways to improve my skills.<br />
+        The journey has just begun – more to come!
+      </div>
+      <div class="skills">
         <h1>Skills</h1>
         <ul>
-            <li><img src="https://cdn.simpleicons.org/HTML5/9399b2" alt="HTML5"  width="25" height="25">HTML</li>
-            <li><img src="https://cdn.simpleicons.org/CSS/9399b2" alt="HTML5"  width="25" height="25">CSS</li>
-            <li><img src="https://cdn.simpleicons.org/python/9399b2" alt="HTML5"  width="25" height="25">Python</li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/HTML5/9399b2"
+              alt="HTML5"
+              width="25"
+              height="25"
+            />HTML
+          </li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/CSS/9399b2"
+              alt="HTML5"
+              width="25"
+              height="25"
+            />CSS
+          </li>
+          <li>
+            <img
+              src="https://cdn.simpleicons.org/python/9399b2"
+              alt="HTML5"
+              width="25"
+              height="25"
+            />Python
+          </li>
         </ul>
-    </div>
-    <div class="stats">
+      </div>
+      <div class="stats">
         <h1>Stats</h1>
         <ul>
-            <li>WakaTime: <a href="https://wakatime.com/@kubabacik" id="wt-time" target="_blank">...</a></li>
-            <li>GitHub Followers: <a href="https://github.com/kubabacik?tab=followers" id="gh-followers" target="_blank">...</a></li>
-            <li>GitHub Repos: <a href="https://github.com/kubabacik?tab=repositories" id="gh-repos" target="_blank">...</a></li>
+          <li>
+            WakaTime:
+            <a
+              href="https://wakatime.com/@kubabacik"
+              id="wt-time"
+              target="_blank"
+              >...</a
+            >
+          </li>
+          <li>
+            GitHub Followers:
+            <a
+              href="https://github.com/kubabacik?tab=followers"
+              id="gh-followers"
+              target="_blank"
+              >...</a
+            >
+          </li>
+          <li>
+            GitHub Repos:
+            <a
+              href="https://github.com/kubabacik?tab=repositories"
+              id="gh-repos"
+              target="_blank"
+              >...</a
+            >
+          </li>
         </ul>
-    </div>
-    <div class="contact">
+      </div>
+      <div class="contact">
         <h1>Contact</h1>
         <ul>
-            <li>E-mail: <a href="mailto:bacik.j@wp.pl" target="_blank">bacik.j@wp.pl</a></li>
-            <li>GitHub: <a href="https://github.com/kubabacik" target="_blank">@kubabacik</a></li>
-            <li>Discord: <a href="https://discord.com/users/730397956485939201" target="_blank">@dinuś</a></li>
+          <li>
+            E-mail:
+            <a href="mailto:bacik.j@wp.pl" target="_blank">bacik.j@wp.pl</a>
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/kubabacik" target="_blank"
+              >@kubabacik</a
+            >
+          </li>
+          <li>
+            Discord:
+            <a
+              href="https://discord.com/users/730397956485939201"
+              target="_blank"
+              >@dinuś</a
+            >
+          </li>
         </ul>
-    </div>
+      </div>
     </div>
     <div class="socials">
-        <a href="https://github.com/kubabacik" target="_blank"><img src="https://cdn.simpleicons.org/github/9399b2" alt="GitHub" width="30" height="30"></a>
-        <a href="https://discord.com/users/730397956485939201" target="_blank"><img src="https://cdn.simpleicons.org/discord/9399b2" alt="Discord" width="30" height="30"></a>
-        <a href="https://wakatime.com/@b349a496-ab29-406a-a2f0-b749fdabcedb" target="_blank"><img src="https://cdn.simpleicons.org/wakatime/9399b2" alt="WakaTime" width="30" height="30"></a>
+      <a href="https://github.com/kubabacik" target="_blank"
+        ><img
+          src="https://cdn.simpleicons.org/github/9399b2"
+          alt="GitHub"
+          width="30"
+          height="30"
+      /></a>
+      <a href="https://discord.com/users/730397956485939201" target="_blank"
+        ><img
+          src="https://cdn.simpleicons.org/discord/9399b2"
+          alt="Discord"
+          width="30"
+          height="30"
+      /></a>
+      <a
+        href="https://wakatime.com/@b349a496-ab29-406a-a2f0-b749fdabcedb"
+        target="_blank"
+        ><img
+          src="https://cdn.simpleicons.org/wakatime/9399b2"
+          alt="WakaTime"
+          width="30"
+          height="30"
+      /></a>
     </div>
     <footer>
-        <p>Copyright &copy; 2025 Kuba Bacik</p>
-        <p>Uses <a href="https://catppuccin.com" target="_blank"> Catppuccin</a> color scheme</p>
+      <p>Copyright &copy; 2025 Kuba Bacik</p>
+      <p>
+        Uses
+        <a href="https://catppuccin.com" target="_blank"> Catppuccin</a> color
+        scheme
+      </p>
     </footer>
-</body>
+  </body>
 </html>
