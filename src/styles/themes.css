@@ -54,20 +54,6 @@
   --red: #d20f39;
 }
 
-.biscuit {
-  --fg: #f4e6d2;
-  --fg-lighter: #b6a8a5;
-  --bg: #181515;
-  --bg-lighter: #221e1e;
-  --card: #423939;
-  --special: var(--yellow);
-  --blue: #4a5a8d;
-  --green: #629386;
-  --yellow: #e39c45;
-  --purple: #9f569a;
-  --red: #ca3f3f;
-}
-
 :root {
   --border-default: 2px solid var(--card);
   --border-dashed: 2px dashed var(--card);

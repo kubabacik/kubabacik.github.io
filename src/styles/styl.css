@@ -52,6 +52,11 @@ body {
     flex-direction: column;
 }
 
+.svg-icon {
+    fill: var(--fg);
+    margin-right: 1rem;
+}
+
 .about h1 {
     font-size: 3rem;
 }
@@ -128,6 +133,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        color: var(--purple);
+    }
 }
 
 footer {
@@ -135,6 +144,7 @@ footer {
     text-align: center;
     width: 100%;
     font-size: small;
+    padding: 0 0 2rem;
 }
 
 footer a {
